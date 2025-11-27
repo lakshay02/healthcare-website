@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Novitas Healthcare</title>
+  <title>Beta Star Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Basic font -->
@@ -296,12 +296,6 @@
       color: var(--text-muted);
     }
 
-    .hero-metric strong {
-      font-size: 1.05rem;
-      color: var(--text-main);
-      display: block;
-    }
-
     .hero-visual {
       border-radius: var(--radius-xl);
       background: radial-gradient(circle at top left, #4dabf7, #1c7ed6);
@@ -311,8 +305,6 @@
       position: relative;
       overflow: hidden;
     }
-
-    /* Inside hero visual – you can swap for a real screenshot later */
 
     .hero-card {
       background: #fff;
@@ -414,8 +406,6 @@
       max-width: 26rem;
     }
 
-    /* HOW WE MAKE HEALTHCARE EASIER */
-
     .feature-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -452,8 +442,6 @@
     .card-text {
       color: var(--text-muted);
     }
-
-    /* NOVITAS IS HERE FOR YOU – benefit list */
 
     .benefits-layout {
       display: grid;
@@ -506,8 +494,6 @@
       margin-bottom: 0.4rem;
     }
 
-    /* SERVICES GRID */
-
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -547,88 +533,6 @@
       color: var(--text-muted);
     }
 
-    /* APP SECTION */
-
-    .app-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .app-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      margin-top: 0.8rem;
-    }
-
-    .store-badge {
-      border-radius: 999px;
-      background: #111827;
-      color: #f9fafb;
-      padding: 0.45rem 0.8rem;
-      display: inline-flex;
-      flex-direction: column;
-      font-size: 0.7rem;
-      min-width: 130px;
-    }
-
-    .store-badge span:first-child {
-      text-transform: uppercase;
-      font-size: 0.6rem;
-      opacity: 0.7;
-    }
-
-    .store-badge span:last-child {
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .app-card {
-      background: var(--bg-alt);
-      border-radius: 24px;
-      padding: 1.1rem;
-      box-shadow: var(--shadow-soft);
-      max-width: 320px;
-      margin: 0 auto;
-      font-size: 0.82rem;
-    }
-
-    .app-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.7rem;
-    }
-
-    .app-card-header small {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-    }
-
-    .app-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
-    }
-
-    .app-list-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .app-pill {
-      border-radius: 999px;
-      padding: 0.18rem 0.55rem;
-      background: #e7f5ff;
-      color: #1c7ed6;
-      font-size: 0.7rem;
-    }
-
-    /* PARTNERS */
-
     .partners-strip {
       background: var(--bg-alt);
       border-radius: var(--radius-lg);
@@ -655,8 +559,6 @@
       font-size: 0.8rem;
       color: var(--text-main);
     }
-
-    /* TESTIMONIALS */
 
     .testimonial-grid {
       display: grid;
@@ -689,8 +591,6 @@
       font-size: 0.75rem;
       color: var(--text-muted);
     }
-
-    /* CONTACT / FOOTER */
 
     .contact-card {
       background: linear-gradient(135deg, #1c7ed6, #4dabf7);
@@ -775,12 +675,9 @@
       background: #fff;
     }
 
-    /* RESPONSIVE */
-
     @media (max-width: 960px) {
       .hero-grid,
-      .benefits-layout,
-      .app-layout {
+      .benefits-layout {
         grid-template-columns: minmax(0, 1fr);
       }
 
@@ -851,12 +748,9 @@
     <div class="container">
       <nav class="nav">
         <div class="brand">
-          <!-- TODO: replace N with logo image if you want -->
-          <div class="brand-logo">N</div>
+          <div class="brand-logo">B</div>
           <div class="brand-text">
-            <!-- TODO: make sure this matches your brand name exactly -->
-            <span class="brand-title">Novitas Healthcare</span>
-            <!-- TODO: update tagline to match your current one -->
+            <span class="brand-title">Beta Star Clinic</span>
             <span class="brand-subtitle">Healthcare made easier</span>
           </div>
         </div>
@@ -864,7 +758,6 @@
         <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
 
         <div class="nav-links" id="navLinks">
-          <!-- TODO: adjust labels/anchors to match your current menu -->
           <a href="#individuals">For Individuals</a>
           <a href="#corporates">For Corporates</a>
           <a href="#services">Services</a>
@@ -875,10 +768,8 @@
         <div class="nav-right" id="navRight">
           <div class="nav-phone">
             <div class="nav-phone-icon">📞</div>
-            <!-- TODO: replace with your real contact number -->
-            <span>800 000 000</span>
+            <span>800200800</span>
           </div>
-          <!-- TODO: adjust CTA label / link -->
           <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
             Talk to our team
           </button>
@@ -895,24 +786,20 @@
           <div>
             <div class="hero-kicker">
               <div class="hero-kicker-dot">UAE</div>
-              <!-- TODO: small text above hero, similar to current site -->
-              <span>Digital & on-ground healthcare for everyday needs</span>
+              <span>Digital-enabled clinic for everyday needs</span>
             </div>
 
-            <!-- TODO: replace hero heading + subheading with your real copy -->
             <h1 class="hero-title">
               Healthcare that moves at the pace of
               <span class="highlight">your life.</span>
             </h1>
 
             <p class="hero-subtitle">
-              <!-- TODO: paste your hero paragraph from the live site -->
-              Connect patients, clinicians, pharmacies and diagnostics into one simple
-              experience — at home, at work or at the clinic.
+              Connect doctor consultations, pharmacy and diagnostics into one simple
+              experience at our clinic.
             </p>
 
             <div class="hero-cta-row">
-              <!-- TODO: adjust CTA text -->
               <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
                 Book a conversation
               </button>
@@ -923,40 +810,37 @@
 
             <div class="hero-note">
               <div class="hero-note-dot"></div>
-              <!-- TODO: small supporting line under CTAs -->
-              <span>Single point of coordination for clinics, home visits and teleconsults.</span>
+              <span>Single point of coordination for clinics, pharmacy and diagnostics.</span>
             </div>
 
             <div class="hero-metrics">
-              <!-- TODO: replace numbers/labels with your real metrics -->
               <div>
-                <strong>XX+ clinics</strong>
+                <strong>20+ on-site clinics</strong>
                 <span>across UAE labour accommodations</span>
               </div>
               <div>
-                <strong>24/7</strong>
-                <span>care access & navigation</span>
+             <!-- <strong>24/7</strong> -->
+             <!-- <span>care access & navigation</span> -->
               </div>
               <div>
                 <strong>Integrated</strong>
-                <span>telehealth, pharmacy & diagnostics</span>
+                <span>primary care, pharmacy & diagnostics</span>
               </div>
             </div>
           </div>
 
           <div class="hero-visual">
-            <!-- TODO: you can later replace this entire block with a real image/screenshot -->
             <div class="hero-card">
               <div class="hero-card-left">
                 <h3>Everyday care in one place</h3>
                 <p>
-                  Teleconsults, home care, diagnostics and medicines connected
+                  Doctor consultations, diagnostics and medicines coordinated
                   through one care team.
                 </p>
                 <div class="hero-badges">
-                  <span class="hero-badge">Teleconsultation</span>
-                  <span class="hero-badge">Home visit</span>
-                  <span class="hero-badge">Diagnostics</span>
+                  <span class="hero-badge">Doctor consultation</span>
+                  <span class="hero-badge">In-house pharmacy</span>
+                  <span class="hero-badge">Lab &amp; diagnostics</span>
                 </div>
                 <div class="hero-card-labels">
                   <span>◦ Primary care & chronic follow-up</span>
@@ -964,22 +848,21 @@
                 </div>
               </div>
               <div class="hero-card-labels">
-                <div class="hero-card-row">
-                  <span>Next available doctor</span>
-                  <span class="hero-pill">in 15–20 mins</span>
+                <div class="hero-card-row">  
+	   <!--	<span>Next available doctor</span> -->
+           <!-- <span class="hero-pill">in 15–20 mins</span> -->
                 </div>
                 <div class="hero-card-row">
-                  <span>Home visit coverage</span>
-                  <span>Dubai & Northern Emirates</span>
+               <!--   <span>Clinic network</span> -->
+              <!--    <span>Dubai &amp; Northern Emirates</span> -->
                 </div>
                 <div class="hero-card-row">
-                  <span>Medicine delivery</span>
-                  <span>partner pharmacies</span>
+              <!--  <span>Medicine access</span> -->
+              <!--    <span>partner pharmacies</span> -->
                 </div>
               </div>
             </div>
             <div class="hero-visual-tagline">
-              <!-- TODO: short tagline from your existing hero visual if you have one -->
               One team behind every interaction.
             </div>
           </div>
@@ -987,115 +870,131 @@
       </div>
     </section>
 
-    <!-- HOW DO WE MAKE YOUR HEALTHCARE EASIER -->
+    <!-- FOR INDIVIDUALS -->
     <section id="individuals">
       <div class="container">
         <div class="section-header">
           <div>
             <div class="section-kicker">
-              <!-- TODO: match section label e.g. "How do we make your healthcare easier?" -->
               For individuals & families
             </div>
-            <!-- TODO: heading similar to "How do we make your healthcare easier" -->
             <h2 class="section-title">How we make healthcare feel simple.</h2>
-            <!-- TODO: short paragraph under heading -->
             <p class="section-subtitle">
               Replace multiple touchpoints with one integrated access to doctors,
-              nurses, diagnostics and medicines.
+              diagnostics and medicines.
             </p>
           </div>
         </div>
 
         <div class="feature-grid">
-          <!-- TODO: replace titles/descriptions to match your 3 cards -->
           <div class="card">
-            <div class="card-icon">📲</div>
-            <div class="card-title">On-demand teleconsultation</div>
+            <div class="card-icon">🩺</div>
+            <div class="card-title">Doctor consultation</div>
             <div class="card-text">
-              Speak to a licensed doctor from anywhere — for everyday concerns or
-              follow-ups.
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-icon">🏠</div>
-            <div class="card-title">Home & on-site care</div>
-            <div class="card-text">
-              Nurse and doctor visits at home or at your accommodation when
-              in-person care is required.
+              Book appointments with licensed doctors for everyday concerns and
+              follow-ups at our clinic.
             </div>
           </div>
           <div class="card">
             <div class="card-icon">💊</div>
-            <div class="card-title">Medicines & chronic refills</div>
+            <div class="card-title">In-clinic care &amp; medicines</div>
             <div class="card-text">
-              Coordination of prescriptions and long-term medicines through
-              partner pharmacies and insurers.
+              Get prescriptions reviewed and medicines dispensed through our
+              clinic and pharmacy partners.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">📈</div>
+            <div class="card-title">Chronic care support</div>
+            <div class="card-text">
+              Structured follow-up visits and investigations for long-term
+              conditions such as diabetes or hypertension.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- NOVITAS IS HERE FOR YOU / BENEFITS -->
-    <section>
+    <!-- OUR SERVICES -->
+    <section id="services">
       <div class="container">
-        <div class="benefits-layout">
+        <div class="section-header">
           <div>
-            <div class="section-kicker">
-              <!-- TODO: if you have a line like "Novitas is here for you", put it here -->
-              Novitas is here for you
-            </div>
-            <!-- TODO: heading and text from that section -->
-            <h2 class="section-title">A single partner for your everyday care.</h2>
+            <div class="section-kicker">Our services</div>
+            <h2 class="section-title">Multiple access points, one care experience.</h2>
             <p class="section-subtitle">
-              We bring together clinicians, technology and operations to provide
-              accessible, coordinated care across touchpoints.
+              Patients can access care through our clinics, in-house pharmacy,
+              diagnostics and chronic care programs — all connected.
             </p>
+          </div>
+        </div>
 
-            <ul class="benefit-list">
-              <!-- TODO: adapt bullets to your real benefit bullets -->
-              <li class="benefit-item">
-                <div class="benefit-icon">✓</div>
-                <span>Integrated care journeys instead of one-off visits.</span>
-              </li>
-              <li class="benefit-item">
-                <div class="benefit-icon">✓</div>
-                <span>Aligned with insurers and employers to reduce friction.</span>
-              </li>
-              <li class="benefit-item">
-                <div class="benefit-icon">✓</div>
-                <span>Designed for both individuals and large workforces.</span>
-              </li>
-            </ul>
+        <div class="services-grid">
+          <!-- Doctor consultation -->
+          <div class="service-card">
+            <span class="service-tag">Clinic</span>
+            <div class="card-title">Doctor consultation</div>
+            <div class="card-text">
+              Primary care and specialist consultations for acute and chronic
+              health concerns within the clinic.
+            </div>
+            <div class="chip-row">
+              <span class="chip">Primary care</span>
+              <span class="chip">Follow-up visits</span>
+            </div>
           </div>
 
-          <div class="benefit-card">
-            <!-- TODO: use this as a highlight card, or adjust to match your layout -->
-            <div class="benefit-card-row">
-              <strong>Primary care, reimagined for the UAE.</strong>
+          <!-- In-house pharmacy -->
+          <div class="service-card">
+            <span class="service-tag">Pharmacy</span>
+            <div class="card-title">In-house pharmacy</div>
+            <div class="card-text">
+              Convenient access to prescribed medicines within the same location,
+              coordinated with your care plan.
             </div>
-            <p style="color:var(--text-muted); margin-bottom:0.6rem;">
-              Seamless movement between clinics, teleconsults, home visits,
-              diagnostics and pharmacy — without repeating your story.
-            </p>
-            <div style="display:flex; flex-wrap:wrap; gap:0.35rem; font-size:0.78rem;">
-              <span class="chip">Patients</span>
-              <span class="chip">Employers</span>
-              <span class="chip">Insurers</span>
-              <span class="chip">Providers</span>
+            <div class="chip-row">
+              <span class="chip">Prescriptions</span>
+              <span class="chip">Chronic refills</span>
+            </div>
+          </div>
+
+          <!-- Lab & diagnostics -->
+          <div class="service-card">
+            <span class="service-tag">Diagnostics</span>
+            <div class="card-title">Lab &amp; diagnostics</div>
+            <div class="card-text">
+              Laboratory tests and diagnostic services with results linked back to
+              your doctor consultation.
+            </div>
+            <div class="chip-row">
+              <span class="chip">Screening</span>
+              <span class="chip">Monitoring</span>
+            </div>
+          </div>
+
+          <!-- Chronic care management -->
+          <div class="service-card">
+            <span class="service-tag">Programs</span>
+            <div class="card-title">Chronic care management</div>
+            <div class="card-text">
+              Long-term management plans for NCDs with structured visits,
+              investigations and medication reviews.
+            </div>
+            <div class="chip-row">
+              <span class="chip">Care plans</span>
+              <span class="chip">Regular follow-up</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOR CORPORATES / EMPLOYERS -->
+    <!-- FOR CORPORATES -->
     <section id="corporates">
       <div class="container">
         <div class="section-header">
           <div>
             <div class="section-kicker">For corporates & partners</div>
-            <!-- TODO: heading + subheading from your corporates section -->
             <h2 class="section-title">Connected health infrastructure for your workforce.</h2>
             <p class="section-subtitle">
               From labour accommodations to office hubs, we design care models
@@ -1105,7 +1004,6 @@
         </div>
 
         <div class="feature-grid">
-          <!-- TODO: map these to your corporate value cards -->
           <div class="card">
             <div class="card-title">On-site & near-site clinics</div>
             <div class="card-text">
@@ -1131,182 +1029,50 @@
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Our services</div>
-            <!-- TODO: heading + subheading from your services section -->
-            <h2 class="section-title">Multiple access points, one care experience.</h2>
-            <p class="section-subtitle">
-              Patients can access care through teleconsults, clinics, home visits,
-              diagnostics and pharmacy — all connected.
-            </p>
-          </div>
-        </div>
-
-        <div class="services-grid">
-          <!-- TODO: Map each card to your real services: Smart Kiosk, Tele-consultation, Home Visit, etc. -->
-          <div class="service-card">
-            <span class="service-tag">Telehealth</span>
-            <div class="card-title">Teleconsultation</div>
-            <div class="card-text">
-              Video or voice consultations with primary care doctors and specialists
-              where available.
-            </div>
-            <div class="chip-row">
-              <span class="chip">Acute issues</span>
-              <span class="chip">Follow-ups</span>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <span class="service-tag">On-ground</span>
-            <div class="card-title">Smart kiosk / on-site clinic</div>
-            <div class="card-text">
-              Digitally enabled kiosks or clinics inside labour accommodations and
-              high-traffic areas.
-            </div>
-            <div class="chip-row">
-              <span class="chip">Vitals</span>
-              <span class="chip">Doctor consults</span>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <span class="service-tag">Home</span>
-            <div class="card-title">Home visit</div>
-            <div class="card-text">
-              Doctor and nurse home visits for patients who require physical
-              examinations or procedures.
-            </div>
-            <div class="chip-row">
-              <span class="chip">Elderly care</span>
-              <span class="chip">Post-hospital</span>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <span class="service-tag">Diagnostics</span>
-            <div class="card-title">Lab & radiology</div>
-            <div class="card-text">
-              Lab sample collection and imaging services, with reports fed back
-              into the same record.
-            </div>
-            <div class="chip-row">
-              <span class="chip">Screening</span>
-              <span class="chip">Monitoring</span>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <span class="service-tag">Pharmacy</span>
-            <div class="card-title">Medicine delivery</div>
-            <div class="card-text">
-              Prescription fulfilment and chronic medication refills coordinated
-              with partner pharmacies.
-            </div>
-            <div class="chip-row">
-              <span class="chip">Doorstep delivery</span>
-              <span class="chip">Chronic refills</span>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <span class="service-tag">Programs</span>
-            <div class="card-title">Chronic care management</div>
-            <div class="card-text">
-              Long-term programs for NCDs with nurse-led coordination and doctor
-              oversight.
-            </div>
-            <div class="chip-row">
-              <span class="chip">Care plans</span>
-              <span class="chip">Remote follow-up</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- APP -->
-    <section id="app">
-      <div class="container">
-        <div class="app-layout">
-          <div>
-            <div class="section-kicker">Patient app</div>
-            <!-- TODO: app section heading + subtitle from your site -->
-            <h2 class="section-title">Your health in one secure app.</h2>
-            <p class="section-subtitle">
-              Book appointments, manage medicines, and keep your family’s health
-              records organised in one place.
-            </p>
-            <ul style="margin-top:0.6rem; font-size:0.86rem; color:var(--text-muted); padding-left:1rem;">
-              <!-- TODO: adjust bullet points -->
-              <li>Book teleconsults, clinics and home visits</li>
-              <li>Receive reminders for medicines and follow-up visits</li>
-              <li>Access lab reports and share with clinicians</li>
-            </ul>
-
-            <div class="app-badges">
-              <!-- TODO: replace # with real store links if you have them -->
-              <a href="#" class="store-badge">
-                <span>Get it on</span>
-                <span>Google Play</span>
-              </a>
-              <a href="#" class="store-badge">
-                <span>Download on the</span>
-                <span>App Store</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="app-card">
-            <!-- Simple mock card; you can keep or replace with an image -->
-            <div class="app-card-header">
-              <div>
-                <strong>Today’s plan</strong>
-                <small>Example app view</small>
-              </div>
-              <span style="font-size:0.72rem; color:var(--accent);">
-                All set ✅
-              </span>
-            </div>
-            <div class="app-list">
-              <div class="app-list-item">
-                <span>Video consult</span>
-                <span class="app-pill">10:30 AM</span>
-              </div>
-              <div class="app-list-item">
-                <span>Medicine reminder</span>
-                <span class="app-pill">8:00 PM</span>
-              </div>
-              <div class="app-list-item">
-                <span>Lab report ready</span>
-                <span class="app-pill">View</span>
-              </div>
-              <div class="app-list-item">
-                <span>Next follow-up</span>
-                <span class="app-pill">In 4 weeks</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PARTNERS -->
+    <!-- BENEFITS -->
     <section>
       <div class="container">
-        <div class="partners-strip">
-          <!-- TODO: match text to your “Trusted by” / partners strip -->
-          <div>Trusted by employers, insurers and healthcare providers across the UAE:</div>
-          <div class="partners-logos">
-            <!-- TODO: replace with your real partner names or logo images -->
-            <span class="partner-pill">Partner 1</span>
-            <span class="partner-pill">Partner 2</span>
-            <span class="partner-pill">Partner 3</span>
-            <span class="partner-pill">Partner 4</span>
+        <div class="benefits-layout">
+          <div>
+            <div class="section-kicker">
+              Beta Star is here for you
+            </div>
+            <h2 class="section-title">A single partner for your everyday care.</h2>
+            <p class="section-subtitle">
+              We bring together clinicians, technology and operations to provide
+              accessible, coordinated care across touchpoints.
+            </p>
+
+            <ul class="benefit-list">
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <span>Integrated care journeys instead of one-off visits.</span>
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <span>Aligned with insurers and employers to reduce friction.</span>
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <span>Designed for both individuals and large workforces.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card-row">
+              <strong>Primary care, reimagined for the UAE.</strong>
+            </div>
+            <p style="color:var(--text-muted); margin-bottom:0.6rem;">
+              Seamless movement between clinics, diagnostics and pharmacy —
+              without repeating your story.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.35rem; font-size:0.78rem;">
+              <span class="chip">Patients</span>
+              <span class="chip">Employers</span>
+              <span class="chip">Insurers</span>
+              <span class="chip">Providers</span>
+            </div>
           </div>
         </div>
       </div>
@@ -1318,7 +1084,6 @@
         <div class="section-header">
           <div>
             <div class="section-kicker">Testimonials</div>
-            <!-- TODO: heading and subtitle from your testimonials section -->
             <h2 class="section-title">What our patients & partners say.</h2>
             <p class="section-subtitle">
               Real stories from individuals, employers and clinicians using our
@@ -1328,7 +1093,6 @@
         </div>
 
         <div class="testimonial-grid">
-          <!-- TODO: replace with your actual testimonials (shortened if needed) -->
           <div class="testimonial-card">
             <p>
               “Our teams in labour accommodations now access doctors without
@@ -1371,17 +1135,15 @@
         <div class="section-header">
           <div>
             <div class="section-kicker">Our story</div>
-            <!-- TODO: heading + subheading from your About section -->
             <h2 class="section-title">Built at the intersection of care and operations.</h2>
             <p class="section-subtitle">
-              Novitas Healthcare brings together clinicians, operators and
+              Beta Star Clinic brings together clinicians, operators and
               technologists to re-design everyday healthcare delivery.
             </p>
           </div>
         </div>
 
         <p style="font-size:0.86rem; color:var(--text-muted); max-width:640px;">
-          <!-- TODO: longer about text – you can paste a shortened version of your current “Our story” copy here -->
           We partner with employers, insurers and healthcare providers to design
           practical care models for real-world settings: labour accommodations,
           home care, clinics and digital channels.
@@ -1394,7 +1156,6 @@
       <div class="container">
         <div class="contact-card">
           <div>
-            <!-- TODO: heading/subtext from your contact/CTA block -->
             <h3 style="font-size:1.1rem; margin-bottom:0.25rem;">Let’s explore how we can work together.</h3>
             <p style="font-size:0.86rem;">
               Share a few details about your organisation or needs and our team
@@ -1402,11 +1163,10 @@
             </p>
           </div>
           <div class="contact-actions">
-            <!-- TODO: update href for Calendly/WhatsApp/Email etc. -->
             <a class="btn-light" href="mailto:info@yourdomain.com">
               ✉️ Email our team
             </a>
-            <a class="btn-light" href="https://wa.me/9715XXXXXXXXX" target="_blank">
+            <a class="btn-light" href="https://wa.me/971506981559" target="_blank">
               💬 WhatsApp us
             </a>
           </div>
@@ -1420,10 +1180,9 @@
     <div class="container">
       <div class="footer-top">
         <div>
-          <!-- TODO: company name & address exactly as per your legal info -->
-          <div class="brand-title">Novitas Healthcare</div>
+          <div class="brand-title">Beta Star Clinic</div>
           <div style="font-size:0.8rem; margin-top:0.2rem;">
-            Dubai, United Arab Emirates
+            In Side Madina Hypermarket - Jabal Ali Industrial First - Dubai
           </div>
         </div>
         <div class="footer-links">
@@ -1431,26 +1190,23 @@
           <a href="#services">Services</a>
           <a href="#about">Our story</a>
           <a href="#contact">Contact</a>
-          <!-- TODO: add privacy/terms links if you have them -->
           <a href="#">Privacy policy</a>
           <a href="#">Terms</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>© <span id="yearSpan"></span> Novitas Healthcare. All rights reserved.</div>
+        <div>© <span id="yearSpan"></span> Beta Star Clinic. All rights reserved.</div>
         <div class="social-row">
-          <!-- TODO: replace # with real links -->
-          <a href="#" class="social-pill" aria-label="LinkedIn">in</a>
-          <a href="#" class="social-pill" aria-label="Instagram">◎</a>
-          <a href="#" class="social-pill" aria-label="X/Twitter">𝕏</a>
+      <!-- <a href="#" class="social-pill" aria-label="LinkedIn">in</a> -->
+      <!-- <a href="#" class="social-pill" aria-label="Instagram">◎</a> -->
+      <!-- <a href="#" class="social-pill" aria-label="X/Twitter">𝕏</a> -->
         </div>
       </div>
     </div>
   </footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.querySelector(".mobile-toggle");
     const navLinks = document.getElementById("navLinks");
     const navRight = document.getElementById("navRight");
@@ -1460,7 +1216,6 @@
       navRight.classList.toggle("mobile-open");
     });
 
-    // Smooth scroll for in-page anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function (e) {
         const id = this.getAttribute("href").slice(1);
@@ -1473,7 +1228,6 @@
       });
     });
 
-    // Current year
     document.getElementById("yearSpan").textContent = new Date().getFullYear();
   </script>
 </body>

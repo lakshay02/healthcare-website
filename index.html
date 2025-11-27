@@ -2,14 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Novitas Healthcare | Smarter Everyday Care</title>
+  <title>Beta Star Healthcare</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Novitas Healthcare makes access to care simple with teleconsultations, home visits, diagnostics, medicine delivery and corporate healthcare programs in the UAE."
-  />
 
-  <!-- Google Font (free) -->
+  <!-- Basic font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -19,24 +15,24 @@
 
   <style>
     :root {
-      --bg: #f5f7fb;
+      --bg: #f6f7fb;
       --bg-alt: #ffffff;
       --primary: #1c7ed6;
-      --primary-soft: rgba(28, 126, 214, 0.1);
+      --primary-soft: rgba(28, 126, 214, 0.08);
       --accent: #20c997;
-      --text-main: #14151a;
-      --text-muted: #5b6170;
-      --border-soft: #e0e4ef;
-      --shadow-soft: 0 14px 35px rgba(15, 23, 42, 0.08);
-      --radius-xl: 18px;
-      --radius-xxl: 26px;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border-soft: #e5e7eb;
+      --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.12);
+      --radius-lg: 16px;
+      --radius-xl: 24px;
       --max-width: 1120px;
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -53,51 +49,46 @@
     }
 
     a {
-      color: inherit;
       text-decoration: none;
-    }
-
-    button {
-      font-family: inherit;
+      color: inherit;
     }
 
     .container {
-      width: 100%;
       max-width: var(--max-width);
       margin: 0 auto;
       padding: 0 1.25rem;
     }
 
-    /* Header / Nav */
+    /* HEADER / NAV */
 
     .site-header {
       position: sticky;
       top: 0;
-      z-index: 40;
-      backdrop-filter: blur(14px);
-      background: rgba(245, 247, 251, 0.9);
-      border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+      z-index: 50;
+      background: rgba(246, 247, 251, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.8);
     }
 
     .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.85rem 0;
+      padding: 0.8rem 0;
       gap: 1rem;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
     }
 
     .brand-logo {
-      width: 36px;
-      height: 36px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 25% 0%, #74c0fc, #1971c2);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 20% 0%, #74c0fc, #1c7ed6);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -112,8 +103,8 @@
     }
 
     .brand-title {
-      font-weight: 700;
       font-size: 1rem;
+      font-weight: 700;
       letter-spacing: 0.02em;
     }
 
@@ -125,14 +116,14 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.75rem;
-      font-size: 0.92rem;
+      gap: 1.5rem;
+      font-size: 0.9rem;
       color: var(--text-muted);
     }
 
     .nav-links a {
       position: relative;
-      padding-bottom: 0.15rem;
+      padding-bottom: 0.1rem;
     }
 
     .nav-links a:hover::after {
@@ -140,34 +131,34 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 16px;
+      width: 18px;
       height: 2px;
       border-radius: 999px;
       background: var(--primary);
     }
 
-    .nav-cta {
+    .nav-right {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 1rem;
+      font-size: 0.85rem;
     }
 
     .nav-phone {
-      font-size: 0.9rem;
-      color: var(--text-muted);
       display: flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.4rem;
+      color: var(--text-muted);
     }
 
-    .nav-phone span.icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 20px;
-      height: 20px;
+    .nav-phone-icon {
+      width: 22px;
+      height: 22px;
       border-radius: 999px;
       background: var(--primary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 0.8rem;
       color: var(--primary);
     }
@@ -175,45 +166,37 @@
     .btn {
       border-radius: 999px;
       border: none;
-      padding: 0.5rem 1.25rem;
-      font-size: 0.9rem;
+      padding: 0.45rem 1.2rem;
+      font-size: 0.85rem;
       font-weight: 500;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease,
-        background-color 0.12s ease, color 0.12s ease;
+      gap: 0.35rem;
+      transition: 0.12s ease;
       white-space: nowrap;
     }
 
     .btn-primary {
       background: var(--primary);
       color: #fff;
-      box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
+      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.28);
     }
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 18px 40px rgba(37, 99, 235, 0.32);
+      box-shadow: 0 18px 38px rgba(37, 99, 235, 0.34);
     }
 
-    .btn-ghost {
+    .btn-outline {
       background: transparent;
       color: var(--text-main);
       border: 1px solid var(--border-soft);
     }
 
-    .btn-ghost:hover {
+    .btn-outline:hover {
       background: #fff;
       box-shadow: var(--shadow-soft);
-    }
-
-    .btn .dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 999px;
-      background: #fff;
     }
 
     .mobile-toggle {
@@ -224,48 +207,48 @@
       cursor: pointer;
     }
 
-    /* Hero */
+    /* HERO */
 
     .hero {
-      padding: 2.4rem 0 1.5rem;
+      padding: 2.4rem 0 1.8rem;
     }
 
-    .hero-inner {
+    .hero-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
       gap: 2.5rem;
       align-items: center;
     }
 
-    .hero-pill {
+    .hero-kicker {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem 0.2rem 0.25rem;
       border-radius: 999px;
-      padding: 0.2rem 0.65rem 0.2rem 0.2rem;
       background: #e7f5ff;
       color: #1c7ed6;
-      font-size: 0.72rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
     }
 
-    .hero-pill-badge {
-      display: inline-flex;
+    .hero-kicker-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.7rem;
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: 22px;
-      height: 22px;
-      border-radius: 999px;
-      background: #1c7ed6;
-      color: #fff;
-      font-size: 0.72rem;
       font-weight: 600;
     }
 
     .hero-title {
-      font-size: clamp(2.1rem, 3vw, 2.6rem);
-      line-height: 1.12;
-      margin-bottom: 0.7rem;
+      font-size: clamp(2.1rem, 3vw, 2.7rem);
+      line-height: 1.15;
+      margin-bottom: 0.6rem;
     }
 
     .hero-title span.highlight {
@@ -278,31 +261,30 @@
       font-size: 0.98rem;
       color: var(--text-muted);
       max-width: 30rem;
-      margin-bottom: 1.35rem;
+      margin-bottom: 1.2rem;
     }
 
     .hero-cta-row {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      gap: 0.85rem;
+      gap: 0.9rem;
       margin-bottom: 1rem;
     }
 
     .hero-note {
-      font-size: 0.82rem;
-      color: var(--text-muted);
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
     }
 
-    .hero-note .status-dot {
+    .hero-note-dot {
       width: 8px;
       height: 8px;
       border-radius: 999px;
-      background: #40c057;
-      box-shadow: 0 0 0 5px rgba(64, 192, 87, 0.25);
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.4);
     }
 
     .hero-metrics {
@@ -310,105 +292,60 @@
       flex-wrap: wrap;
       gap: 1.1rem;
       margin-top: 1.4rem;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
     }
 
-    .hero-metric {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .hero-metric strong {
-      font-size: 1.05rem;
-      color: var(--text-main);
-    }
-
     .hero-visual {
-      border-radius: var(--radius-xxl);
+      border-radius: var(--radius-xl);
       background: radial-gradient(circle at top left, #4dabf7, #1c7ed6);
-      padding: 1.2rem;
+      padding: 1.1rem;
       box-shadow: var(--shadow-soft);
+      min-height: 260px;
       position: relative;
       overflow: hidden;
-      min-height: 260px;
     }
 
-    /* Replace this area with your own screenshot or illustration */
-    .hero-visual-main {
-      position: relative;
-      border-radius: 20px;
+    .hero-card {
       background: #fff;
+      border-radius: 20px;
       padding: 1rem;
-      min-height: 210px;
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
       gap: 1rem;
-      align-items: center;
+      min-height: 210px;
     }
 
-    .hero-visual-left h3 {
+    .hero-card-left h3 {
       font-size: 0.95rem;
       margin-bottom: 0.3rem;
     }
 
-    .hero-visual-left p {
+    .hero-card-left p {
       font-size: 0.8rem;
       color: var(--text-muted);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
     }
 
-    .hero-visual-tags {
+    .hero-badges {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 0.75rem;
+      gap: 0.45rem;
+      margin-bottom: 0.8rem;
     }
 
-    .hero-visual-tags span {
+    .hero-badge {
       font-size: 0.72rem;
-      padding: 0.2rem 0.55rem;
+      padding: 0.18rem 0.55rem;
       border-radius: 999px;
-      border: 1px dashed rgba(148, 163, 184, 0.7);
+      border: 1px dashed rgba(148, 163, 184, 0.75);
       color: var(--text-muted);
     }
 
-    .hero-visual-badges {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.74rem;
-      color: var(--text-muted);
-    }
-
-    .hero-visual-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background: #f8f9fa;
-    }
-
-    .hero-visual-badge span.icon {
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      background: #e7f5ff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.72rem;
-      color: #1c7ed6;
-    }
-
-    .hero-visual-right {
-      background: #f5f7fb;
-      border-radius: 16px;
-      padding: 0.75rem;
+    .hero-card-labels {
       display: flex;
       flex-direction: column;
-      gap: 0.55rem;
+      gap: 0.35rem;
       font-size: 0.78rem;
     }
 
@@ -416,57 +353,46 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 0.5rem;
     }
 
-    .hero-card-row strong {
-      font-size: 0.82rem;
-    }
-
-    .hero-card-pill {
-      padding: 0.12rem 0.5rem;
+    .hero-pill {
+      padding: 0.18rem 0.55rem;
       border-radius: 999px;
       background: #e7f5ff;
       color: #1c7ed6;
-      font-size: 0.7rem;
+      font-size: 0.72rem;
     }
 
-    .hero-small-label {
-      font-size: 0.7rem;
-      color: var(--text-muted);
-    }
-
-    .hero-tagline {
+    .hero-visual-tagline {
       position: absolute;
       right: 1.1rem;
-      bottom: 1.1rem;
+      bottom: 0.9rem;
       font-size: 0.72rem;
-      color: #e7f5ff;
-      opacity: 0.95;
+      color: rgba(241, 249, 255, 0.95);
     }
 
-    /* Generic section styling */
+    /* GENERIC SECTIONS */
 
     section {
-      padding: 2.5rem 0 1.5rem;
+      padding: 2.4rem 0 1.5rem;
     }
 
     .section-header {
       display: flex;
       justify-content: space-between;
-      gap: 1.5rem;
       align-items: flex-end;
-      margin-bottom: 1.3rem;
+      gap: 1.5rem;
+      margin-bottom: 1.1rem;
       flex-wrap: wrap;
     }
 
     .section-kicker {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
       color: #1c7ed6;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
     .section-title {
@@ -480,36 +406,31 @@
       max-width: 26rem;
     }
 
-    /* Feature cards */
-
     .feature-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.1rem;
+      gap: 1rem;
     }
 
     .card {
-      border-radius: var(--radius-xl);
       background: var(--bg-alt);
+      border-radius: var(--radius-lg);
       padding: 1rem;
-      border: 1px solid rgba(226, 232, 240, 0.9);
-    }
-
-    .card-compact {
-      padding: 0.85rem 0.9rem;
+      border: 1px solid rgba(229, 231, 235, 0.95);
+      font-size: 0.84rem;
     }
 
     .card-icon {
       width: 32px;
       height: 32px;
-      border-radius: 14px;
+      border-radius: 12px;
+      background: var(--primary-soft);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
-      background: var(--primary-soft);
+      font-size: 1.05rem;
       color: var(--primary);
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.6rem;
     }
 
     .card-title {
@@ -519,11 +440,59 @@
     }
 
     .card-text {
-      font-size: 0.82rem;
       color: var(--text-muted);
     }
 
-    /* Services grid */
+    .benefits-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .benefit-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 0.4rem;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .benefit-icon {
+      margin-top: 0.2rem;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: #dcfce7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: #16a34a;
+    }
+
+    .benefit-card {
+      background: var(--bg-alt);
+      border-radius: var(--radius-xl);
+      padding: 1.1rem;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.84rem;
+    }
+
+    .benefit-card-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
 
     .services-grid {
       display: grid;
@@ -532,157 +501,64 @@
     }
 
     .service-card {
-      border-radius: var(--radius-xl);
       background: var(--bg-alt);
+      border-radius: var(--radius-lg);
       padding: 1rem;
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      font-size: 0.82rem;
+      border: 1px solid rgba(229, 231, 235, 0.95);
+      font-size: 0.84rem;
     }
 
     .service-tag {
       display: inline-flex;
       padding: 0.15rem 0.55rem;
       border-radius: 999px;
-      background: #f1f3f5;
-      color: var(--text-muted);
+      background: #f3f4f6;
       font-size: 0.7rem;
-      margin-bottom: 0.2rem;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
     }
 
     .chip-row {
       display: flex;
       flex-wrap: wrap;
       gap: 0.35rem;
-      margin-top: 0.35rem;
+      margin-top: 0.4rem;
     }
 
     .chip {
       font-size: 0.72rem;
       padding: 0.18rem 0.5rem;
       border-radius: 999px;
-      background: #f5f7fb;
+      background: #f3f4ff;
       color: var(--text-muted);
     }
-
-    /* App section */
-
-    .app-section {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .app-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.65rem;
-      margin-top: 0.7rem;
-    }
-
-    .store-badge {
-      border-radius: 999px;
-      background: #0f172a;
-      color: #f9fafb;
-      padding: 0.45rem 0.78rem;
-      display: inline-flex;
-      flex-direction: column;
-      gap: 0.1rem;
-      font-size: 0.7rem;
-      min-width: 130px;
-    }
-
-    .store-badge span:first-child {
-      text-transform: uppercase;
-      font-size: 0.6rem;
-      opacity: 0.7;
-    }
-
-    .store-badge span:last-child {
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .app-card {
-      border-radius: 24px;
-      background: var(--bg-alt);
-      padding: 1.1rem;
-      box-shadow: var(--shadow-soft);
-      max-width: 320px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .app-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.7rem;
-      font-size: 0.78rem;
-    }
-
-    .app-card-header strong {
-      font-size: 0.9rem;
-    }
-
-    .app-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
-      font-size: 0.78rem;
-    }
-
-    .app-list-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .app-list-item span:first-child {
-      color: var(--text-muted);
-    }
-
-    .app-list-pill {
-      padding: 0.18rem 0.5rem;
-      border-radius: 999px;
-      font-size: 0.7rem;
-      background: #e7f5ff;
-      color: #1c7ed6;
-    }
-
-    /* Partners */
 
     .partners-strip {
-      border-radius: var(--radius-xl);
       background: var(--bg-alt);
-      border: 1px dashed rgba(148, 163, 184, 0.7);
+      border-radius: var(--radius-lg);
       padding: 0.9rem 1rem;
+      border: 1px dashed rgba(148, 163, 184, 0.8);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 1.1rem;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
     }
 
     .partners-logos {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.65rem;
+      gap: 0.6rem;
     }
 
     .partner-pill {
       padding: 0.3rem 0.7rem;
       border-radius: 999px;
-      background: #f5f7fb;
-      font-size: 0.78rem;
+      background: #f3f4ff;
+      font-size: 0.8rem;
       color: var(--text-main);
     }
-
-    /* Testimonials */
 
     .testimonial-grid {
       display: grid;
@@ -691,159 +567,95 @@
     }
 
     .testimonial-card {
-      border-radius: var(--radius-xl);
       background: var(--bg-alt);
+      border-radius: var(--radius-lg);
       padding: 1rem;
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      font-size: 0.82rem;
+      border: 1px solid rgba(229, 231, 235, 0.95);
+      font-size: 0.84rem;
     }
 
     .testimonial-card p {
-      margin-bottom: 0.7rem;
       color: var(--text-muted);
+      margin-bottom: 0.7rem;
     }
 
     .testimonial-meta {
-      display: flex;
-      flex-direction: column;
       font-size: 0.78rem;
     }
 
     .testimonial-name {
       font-weight: 600;
-      color: var(--text-main);
     }
 
     .testimonial-role {
-      color: var(--text-muted);
       font-size: 0.75rem;
-    }
-
-    /* FAQ */
-
-    .faq-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-      gap: 2rem;
-    }
-
-    details {
-      background: var(--bg-alt);
-      border-radius: var(--radius-xl);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      padding: 0.85rem 1rem;
-      font-size: 0.82rem;
-    }
-
-    summary {
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    summary::marker,
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .faq-toggle {
-      font-size: 1rem;
       color: var(--text-muted);
     }
-
-    details[open] .faq-toggle {
-      transform: rotate(90deg);
-    }
-
-    details > div {
-      margin-top: 0.55rem;
-      color: var(--text-muted);
-    }
-
-    /* Contact / Footer */
 
     .contact-card {
-      border-radius: 24px;
       background: linear-gradient(135deg, #1c7ed6, #4dabf7);
+      border-radius: var(--radius-xl);
       padding: 1.4rem 1.3rem;
-      color: #f8f9fa;
+      color: #f9fafb;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 1.5rem;
+      gap: 1.4rem;
       flex-wrap: wrap;
-    }
-
-    .contact-card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .contact-card p {
-      font-size: 0.88rem;
-      opacity: 0.9;
     }
 
     .contact-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
+      gap: 0.7rem;
     }
 
-    .btn-secondary-light {
+    .btn-light {
       border-radius: 999px;
       border: 1px solid rgba(241, 245, 249, 0.85);
-      background: rgba(15, 23, 42, 0.05);
-      color: #f1f5f9;
+      background: rgba(15, 23, 42, 0.08);
+      color: #f9fafb;
       padding: 0.5rem 1.1rem;
       font-size: 0.86rem;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
       cursor: pointer;
-      transition: background 0.12s ease, transform 0.12s ease;
+      transition: 0.12s ease;
     }
 
-    .btn-secondary-light:hover {
-      background: rgba(15, 23, 42, 0.12);
+    .btn-light:hover {
+      background: rgba(15, 23, 42, 0.14);
       transform: translateY(-1px);
     }
 
     footer {
-      padding: 1.5rem 0 2rem;
+      padding: 1.6rem 0 2rem;
       font-size: 0.78rem;
       color: var(--text-muted);
     }
 
     .footer-top {
       display: flex;
-      align-items: flex-start;
       justify-content: space-between;
-      gap: 2rem;
+      align-items: flex-start;
       flex-wrap: wrap;
+      gap: 2rem;
       margin-bottom: 1rem;
     }
 
     .footer-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.3rem;
+      gap: 1.2rem;
       font-size: 0.8rem;
-    }
-
-    .footer-links a {
-      color: var(--text-muted);
     }
 
     .footer-bottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 1.5rem;
       flex-wrap: wrap;
+      gap: 1.5rem;
     }
 
     .social-row {
@@ -856,19 +668,16 @@
       height: 26px;
       border-radius: 999px;
       border: 1px solid var(--border-soft);
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.82rem;
       background: #fff;
     }
 
-    /* Responsive */
-
     @media (max-width: 960px) {
-      .hero-inner,
-      .app-section,
-      .faq-grid {
+      .hero-grid,
+      .benefits-layout {
         grid-template-columns: minmax(0, 1fr);
       }
 
@@ -885,7 +694,7 @@
 
     @media (max-width: 768px) {
       .nav-links,
-      .nav-cta {
+      .nav-right {
         display: none;
       }
 
@@ -893,33 +702,27 @@
         display: inline-flex;
       }
 
-      .nav-links.mobile-open,
-      .nav-cta.mobile-open {
-        display: flex;
-      }
-
       .nav {
         flex-wrap: wrap;
       }
 
-      .nav-links {
+      .nav-links.mobile-open,
+      .nav-right.mobile-open {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
         width: 100%;
         padding-top: 0.4rem;
       }
 
-      .nav-cta {
-        width: 100%;
+      .nav-links.mobile-open {
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
+
+      .nav-right.mobile-open {
         justify-content: space-between;
-      }
-
-      .hero {
-        padding-top: 1.8rem;
-      }
-
-      .hero-inner {
-        gap: 1.75rem;
+        align-items: flex-start;
+        gap: 0.7rem;
       }
 
       .feature-grid,
@@ -931,19 +734,11 @@
       .section-header {
         align-items: flex-start;
       }
-
-      .contact-card {
-        align-items: flex-start;
-      }
     }
 
     @media (max-width: 480px) {
       .hero-title {
         font-size: 1.85rem;
-      }
-
-      .brand-title {
-        font-size: 0.95rem;
       }
     }
   </style>
@@ -953,16 +748,14 @@
     <div class="container">
       <nav class="nav">
         <div class="brand">
-          <div class="brand-logo">N</div>
+          <div class="brand-logo">B</div>
           <div class="brand-text">
-            <span class="brand-title">Novitas Healthcare</span>
-            <span class="brand-subtitle">Smarter everyday care</span>
+            <span class="brand-title">Beta Star Healthcare</span>
+            <span class="brand-subtitle">Healthcare made easier</span>
           </div>
         </div>
 
-        <button class="mobile-toggle" aria-label="Toggle navigation">
-          ☰
-        </button>
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
 
         <div class="nav-links" id="navLinks">
           <a href="#individuals">For Individuals</a>
@@ -972,13 +765,13 @@
           <a href="#contact">Contact</a>
         </div>
 
-        <div class="nav-cta" id="navCta">
+        <div class="nav-right" id="navRight">
           <div class="nav-phone">
-            <span class="icon">📞</span>
-            <span>800&nbsp;200800&nbsp;• 24/7 support</span>
+            <div class="nav-phone-icon">📞</div>
+            <span>800200800</span>
           </div>
           <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-            <span class="dot"></span> Talk to our team
+            Talk to our team
           </button>
         </div>
       </nav>
@@ -989,117 +782,106 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="container">
-        <div class="hero-inner">
+        <div class="hero-grid">
           <div>
-            <div class="hero-pill">
-              <span class="hero-pill-badge">UAE</span>
-              <span>Connected care for workplaces & families</span>
+            <div class="hero-kicker">
+              <div class="hero-kicker-dot">UAE</div>
+              <span>Digital & on-ground healthcare for everyday needs</span>
             </div>
 
             <h1 class="hero-title">
-              Healthcare that fits into your
-              <span class="highlight">everyday life.</span>
+              Healthcare that moves at the pace of
+              <span class="highlight">your life.</span>
             </h1>
 
             <p class="hero-subtitle">
-              Teleconsultations, home visits, diagnostics, and medicine delivery —
-              all coordinated through one simple platform, built around patients in
-              the UAE.
+              Connect patients, clinicians, pharmacies and diagnostics into one simple
+              experience — at home, at work or at the clinic.
             </p>
 
             <div class="hero-cta-row">
               <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
                 Book a conversation
               </button>
-              <button class="btn btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+              <button class="btn btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
                 Explore our services
               </button>
             </div>
 
             <div class="hero-note">
-              <span class="status-dot"></span>
-              <span>Doctors, nurses & pharmacists connected through one care team.</span>
+              <div class="hero-note-dot"></div>
+              <span>Single point of coordination for clinics, home visits and teleconsults.</span>
             </div>
 
             <div class="hero-metrics">
-              <div class="hero-metric">
-                <strong>60+ clinics</strong>
-                <span>Across UAE labour accommodations</span>
+              <div>
+                <strong>XX+ clinics</strong>
+                <span>across UAE labour accommodations</span>
               </div>
-              <div class="hero-metric">
+              <div>
                 <strong>24/7</strong>
-                <span>Care navigation & support</span>
+                <span>care access & navigation</span>
               </div>
-              <div class="hero-metric">
+              <div>
                 <strong>Integrated</strong>
-                <span>Telehealth, pharmacy & diagnostics</span>
+                <span>telehealth, pharmacy & diagnostics</span>
               </div>
             </div>
           </div>
 
           <div class="hero-visual">
-            <!-- REPLACE contents with your own UI screenshot / artwork if you like -->
-            <div class="hero-visual-main">
-              <div class="hero-visual-left">
-                <h3>Smart care hub</h3>
+            <div class="hero-card">
+              <div class="hero-card-left">
+                <h3>Everyday care in one place</h3>
                 <p>
-                  One place to book visits, refill chronic medicines and follow up
-                  on lab results.
+                  Teleconsults, home care, diagnostics and medicines connected
+                  through one care team.
                 </p>
-                <div class="hero-visual-tags">
-                  <span>Teleconsults</span>
-                  <span>Home visits</span>
-                  <span>Diagnostics</span>
+                <div class="hero-badges">
+                  <span class="hero-badge">Teleconsultation</span>
+                  <span class="hero-badge">Home visit</span>
+                  <span class="hero-badge">Diagnostics</span>
                 </div>
-                <div class="hero-visual-badges">
-                  <div class="hero-visual-badge">
-                    <span class="icon">👩‍⚕️</span>
-                    <span>Licensed UAE clinicians</span>
-                  </div>
-                  <div class="hero-visual-badge">
-                    <span class="icon">🔒</span>
-                    <span>Secure health records</span>
-                  </div>
+                <div class="hero-card-labels">
+                  <span>◦ Primary care & chronic follow-up</span>
+                  <span>◦ Support for individuals & corporate workforces</span>
                 </div>
               </div>
-
-              <div class="hero-visual-right">
+              <div class="hero-card-labels">
                 <div class="hero-card-row">
-                  <span class="hero-small-label">Next available</span>
-                  <span class="hero-card-pill">Doctor in 15–20 mins</span>
+                  <span>Next available doctor</span>
+                  <span class="hero-pill">in 15–20 mins</span>
                 </div>
                 <div class="hero-card-row">
-                  <span>Video consultation</span>
-                  <strong>AED&nbsp;0–50*</strong>
-                </div>
-                <div class="hero-card-row">
-                  <span>Home visit</span>
-                  <span class="hero-small-label">Dubai & Northern Emirates</span>
+                  <span>Home visit coverage</span>
+                  <span>Dubai & Northern Emirates</span>
                 </div>
                 <div class="hero-card-row">
                   <span>Medicine delivery</span>
-                  <span class="hero-small-label">From partner pharmacies</span>
+                  <span>partner pharmacies</span>
                 </div>
               </div>
             </div>
-            <div class="hero-tagline">
-              A single team behind every interaction.
+            <div class="hero-visual-tagline">
+              One team behind every interaction.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- HOW WE HELP -->
+    <!-- FOR INDIVIDUALS -->
     <section id="individuals">
       <div class="container">
         <div class="section-header">
           <div>
-            <div class="section-kicker">For individuals & families</div>
-            <h2 class="section-title">We make your healthcare feel simple.</h2>
+            <div class="section-kicker">
+              For individuals & families
+            </div>
+            <h2 class="section-title">How we make healthcare feel simple.</h2>
             <p class="section-subtitle">
-              No more juggling apps and phone numbers. Reach one care team for
-              everything from everyday coughs to long-term conditions.
+              Replace multiple touchpoints with one integrated access to doctors,
+              nurses, diagnostics and medicines.
             </p>
           </div>
         </div>
@@ -1107,25 +889,25 @@
         <div class="feature-grid">
           <div class="card">
             <div class="card-icon">📲</div>
-            <div class="card-title">24/7 teleconsultation</div>
+            <div class="card-title">On-demand teleconsultation</div>
             <div class="card-text">
-              Connect with a licensed doctor over video or phone, from home, work
-              or on the go.
+              Speak to a licensed doctor from anywhere — for everyday concerns or
+              follow-ups.
             </div>
           </div>
           <div class="card">
             <div class="card-icon">🏠</div>
-            <div class="card-title">Home visits when needed</div>
+            <div class="card-title">Home & on-site care</div>
             <div class="card-text">
-              Nurse and doctor home visits for patients who need in-person care,
-              without long waiting rooms.
+              Nurse and doctor visits at home or at your accommodation when
+              in-person care is required.
             </div>
           </div>
           <div class="card">
             <div class="card-icon">💊</div>
-            <div class="card-title">Medicines & refills</div>
+            <div class="card-title">Medicines & chronic refills</div>
             <div class="card-text">
-              Get prescriptions and chronic medicine refills coordinated with
+              Coordination of prescriptions and long-term medicines through
               partner pharmacies and insurers.
             </div>
           </div>
@@ -1133,98 +915,57 @@
       </div>
     </section>
 
-    <!-- CORPORATES -->
-    <section id="corporates">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">For employers & insurers</div>
-            <h2 class="section-title">A connected health layer for your workforce.</h2>
-            <p class="section-subtitle">
-              We plug into your existing insurance and network to give employees
-              simple access to primary care, while you gain visibility on outcomes
-              and costs.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature-grid">
-          <div class="card card-compact">
-            <div class="card-title">On-site & near-site clinics</div>
-            <div class="card-text">
-              Smart clinics embedded into labour accommodations and high-density
-              work sites.
-            </div>
-          </div>
-          <div class="card card-compact">
-            <div class="card-title">Chronic care programs</div>
-            <div class="card-text">
-              Structured follow-up for diabetes, hypertension and other NCDs to
-              reduce avoidable claims.
-            </div>
-          </div>
-          <div class="card card-compact">
-            <div class="card-title">Integrated reporting</div>
-            <div class="card-text">
-              Regular insights on utilisation, top conditions and trendlines
-              across locations.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
+    <!-- OUR SERVICES -->
     <section id="services">
       <div class="container">
         <div class="section-header">
           <div>
             <div class="section-kicker">Our services</div>
-            <h2 class="section-title">One platform, multiple ways to access care.</h2>
+            <h2 class="section-title">Multiple access points, one care experience.</h2>
             <p class="section-subtitle">
-              Patients can move between teleconsultation, clinics, home visits and
-              diagnostics without repeating their story each time.
+              Patients can access care through teleconsults, clinics, home visits,
+              diagnostics and pharmacy — all connected.
             </p>
           </div>
         </div>
 
         <div class="services-grid">
           <div class="service-card">
-            <span class="service-tag">Access</span>
+            <span class="service-tag">Telehealth</span>
             <div class="card-title">Teleconsultation</div>
             <div class="card-text">
-              24/7 access to primary care doctors through video or voice, with
-              digital prescriptions where appropriate.
+              Video or voice consultations with primary care doctors and specialists
+              where available.
             </div>
             <div class="chip-row">
               <span class="chip">Acute issues</span>
-              <span class="chip">Follow ups</span>
+              <span class="chip">Follow-ups</span>
             </div>
           </div>
 
           <div class="service-card">
             <span class="service-tag">On-ground</span>
-            <div class="card-title">On-site & smart clinics</div>
+            <div class="card-title">Smart kiosk / on-site clinic</div>
             <div class="card-text">
-              Clinics in labour accommodations and high-density hubs with digital
-              queues and integrated records.
+              Digitally enabled kiosks or clinics inside labour accommodations and
+              high-traffic areas.
             </div>
             <div class="chip-row">
-              <span class="chip">Vitals & triage</span>
+              <span class="chip">Vitals</span>
               <span class="chip">Doctor consults</span>
             </div>
           </div>
 
           <div class="service-card">
             <span class="service-tag">Home</span>
-            <div class="card-title">Home visits</div>
+            <div class="card-title">Home visit</div>
             <div class="card-text">
-              Doctors and nurses at home for patients who need physical exams,
-              procedures or long-term monitoring.
+              Doctor and nurse home visits for patients who require physical
+              examinations or procedures.
             </div>
             <div class="chip-row">
-              <span class="chip">Elderly</span>
-              <span class="chip">Post-discharge</span>
+              <span class="chip">Elderly care</span>
+              <span class="chip">Post-hospital</span>
             </div>
           </div>
 
@@ -1232,12 +973,12 @@
             <span class="service-tag">Diagnostics</span>
             <div class="card-title">Lab & radiology</div>
             <div class="card-text">
-              Lab sample collection from clinics or home with digital reports
-              shared back to the treating doctor.
+              Lab sample collection and imaging services, with reports fed back
+              into the same record.
             </div>
             <div class="chip-row">
-              <span class="chip">Routine tests</span>
               <span class="chip">Screening</span>
+              <span class="chip">Monitoring</span>
             </div>
           </div>
 
@@ -1245,8 +986,8 @@
             <span class="service-tag">Pharmacy</span>
             <div class="card-title">Medicine delivery</div>
             <div class="card-text">
-              Prescriptions and chronic medication refills coordinated with
-              partner pharmacies and your insurance.
+              Prescription fulfilment and chronic medication refills coordinated
+              with partner pharmacies.
             </div>
             <div class="chip-row">
               <span class="chip">Doorstep delivery</span>
@@ -1258,76 +999,101 @@
             <span class="service-tag">Programs</span>
             <div class="card-title">Chronic care management</div>
             <div class="card-text">
-              Nurse-led, doctor-supported programs for diabetes, hypertension and
-              other NCDs with structured follow-up.
+              Long-term programs for NCDs with nurse-led coordination and doctor
+              oversight.
             </div>
             <div class="chip-row">
               <span class="chip">Care plans</span>
-              <span class="chip">Remote monitoring</span>
+              <span class="chip">Remote follow-up</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- APP -->
-    <section>
+    <!-- FOR CORPORATES -->
+    <section id="corporates">
       <div class="container">
-        <div class="app-section">
+        <div class="section-header">
           <div>
-            <div class="section-kicker">Patient app</div>
-            <h2 class="section-title">Your health, organised in one app.</h2>
+            <div class="section-kicker">For corporates & partners</div>
+            <h2 class="section-title">Connected health infrastructure for your workforce.</h2>
             <p class="section-subtitle">
-              Book appointments, track medicines, view lab results and keep your
-              family profiles in one secure place.
+              From labour accommodations to office hubs, we design care models
+              that improve access, outcomes and utilisation.
             </p>
-            <ul style="margin-top:0.7rem; font-size:0.86rem; color:var(--text-muted); padding-left:1rem;">
-              <li>Book teleconsults and home visits</li>
-              <li>Receive reminders for medicines and follow-up visits</li>
-              <li>Share reports with your doctor in a few taps</li>
-            </ul>
-            <div class="app-badges">
-              <!-- Replace with real store links when ready -->
-              <a href="#" class="store-badge">
-                <span>Get it on</span>
-                <span>Google Play</span>
-              </a>
-              <a href="#" class="store-badge">
-                <span>Download on the</span>
-                <span>App Store</span>
-              </a>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <div class="card">
+            <div class="card-title">On-site & near-site clinics</div>
+            <div class="card-text">
+              Clinics embedded into high-density locations with digital triage,
+              queuing and integrated records.
             </div>
           </div>
-
-          <div class="app-card">
-            <div class="app-card-header">
-              <div>
-                <strong>Today’s care plan</strong>
-                <div style="font-size:0.72rem; color:var(--text-muted);">
-                  Tuesday, 9:00 AM – Dubai
-                </div>
-              </div>
-              <span style="font-size:0.72rem; color:var(--accent);">
-                All vitals logged ✅
-              </span>
+          <div class="card">
+            <div class="card-title">Chronic care programs</div>
+            <div class="card-text">
+              Structured follow-up for diabetes, hypertension and other NCDs to
+              reduce avoidable claims.
             </div>
-            <div class="app-list">
-              <div class="app-list-item">
-                <span>Video call with Dr. Sara</span>
-                <span class="app-list-pill">10:30 AM</span>
-              </div>
-              <div class="app-list-item">
-                <span>Diabetes medication reminder</span>
-                <span class="app-list-pill">8:00 PM</span>
-              </div>
-              <div class="app-list-item">
-                <span>Lab report available</span>
-                <span class="app-list-pill">HbA1c</span>
-              </div>
-              <div class="app-list-item">
-                <span>Schedule next follow-up</span>
-                <span class="app-list-pill">In 4 weeks</span>
-              </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Reporting & insights</div>
+            <div class="card-text">
+              Regular reporting on utilisation, conditions, and engagement across
+              sites and cohorts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section>
+      <div class="container">
+        <div class="benefits-layout">
+          <div>
+            <div class="section-kicker">
+              Beta Star is here for you
+            </div>
+            <h2 class="section-title">A single partner for your everyday care.</h2>
+            <p class="section-subtitle">
+              We bring together clinicians, technology and operations to provide
+              accessible, coordinated care across touchpoints.
+            </p>
+
+            <ul class="benefit-list">
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <span>Integrated care journeys instead of one-off visits.</span>
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <span>Aligned with insurers and employers to reduce friction.</span>
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <span>Designed for both individuals and large workforces.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card-row">
+              <strong>Primary care, reimagined for the UAE.</strong>
+            </div>
+            <p style="color:var(--text-muted); margin-bottom:0.6rem;">
+              Seamless movement between clinics, teleconsults, home visits,
+              diagnostics and pharmacy — without repeating your story.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.35rem; font-size:0.78rem;">
+              <span class="chip">Patients</span>
+              <span class="chip">Employers</span>
+              <span class="chip">Insurers</span>
+              <span class="chip">Providers</span>
             </div>
           </div>
         </div>
@@ -1338,13 +1104,12 @@
     <section>
       <div class="container">
         <div class="partners-strip">
-          <div>Trusted by employers & partners across the UAE:</div>
+          <div>Trusted by employers, insurers and healthcare providers across the UAE:</div>
           <div class="partners-logos">
-            <!-- Replace with real partner names/logos you have permission for -->
-            <span class="partner-pill">Corporate A</span>
-            <span class="partner-pill">Corporate B</span>
-            <span class="partner-pill">Insurance Partner</span>
-            <span class="partner-pill">Clinic Network</span>
+            <span class="partner-pill">Partner 1</span>
+            <span class="partner-pill">Partner 2</span>
+            <span class="partner-pill">Partner 3</span>
+            <span class="partner-pill">Partner 4</span>
           </div>
         </div>
       </div>
@@ -1355,11 +1120,11 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <div class="section-kicker">What people say</div>
-            <h2 class="section-title">Experiences from patients & partners.</h2>
+            <div class="section-kicker">Testimonials</div>
+            <h2 class="section-title">What our patients & partners say.</h2>
             <p class="section-subtitle">
-              A connected care model creates better experiences for patients and
-              simpler healthcare operations for employers.
+              Real stories from individuals, employers and clinicians using our
+              care model in daily life.
             </p>
           </div>
         </div>
@@ -1367,122 +1132,80 @@
         <div class="testimonial-grid">
           <div class="testimonial-card">
             <p>
-              “Our teams in labour accommodations now have reliable access to
-              doctors without losing half a day travelling to clinics.”
+              “Our teams in labour accommodations now access doctors without
+              losing hours travelling to clinics.”
             </p>
             <div class="testimonial-meta">
-              <span class="testimonial-name">HR Director</span>
-              <span class="testimonial-role">Large construction company</span>
+              <div class="testimonial-name">HR Director</div>
+              <div class="testimonial-role">Construction partner</div>
             </div>
           </div>
 
           <div class="testimonial-card">
             <p>
-              “The ability to follow patients from teleconsult to home visits and
-              labs makes clinical decisions much clearer.”
+              “The ability to follow patients across touchpoints makes clinical
+              decision-making more coherent.”
             </p>
             <div class="testimonial-meta">
-              <span class="testimonial-name">Consultant Physician</span>
-              <span class="testimonial-role">Internal medicine</span>
+              <div class="testimonial-name">Consultant physician</div>
+              <div class="testimonial-role">Internal medicine</div>
             </div>
           </div>
 
           <div class="testimonial-card">
             <p>
-              “I can message the care team, view my reports and reorder medicines
-              in one app. It finally feels joined-up.”
+              “I can chat with the care team, see my reports and request
+              medicines in one place.”
             </p>
             <div class="testimonial-meta">
-              <span class="testimonial-name">Ahmed</span>
-              <span class="testimonial-role">Patient living in Dubai</span>
+              <div class="testimonial-name">Patient</div>
+              <div class="testimonial-role">Dubai resident</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ + ABOUT -->
+    <!-- ABOUT / STORY -->
     <section id="about">
       <div class="container">
-        <div class="faq-grid">
+        <div class="section-header">
           <div>
             <div class="section-kicker">Our story</div>
-            <h2 class="section-title">Built by clinicians, operators & technologists.</h2>
+            <h2 class="section-title">Built at the intersection of care and operations.</h2>
             <p class="section-subtitle">
-              Novitas Healthcare brings together on-ground care teams, digital
-              tools and data to make everyday healthcare more accessible and more
-              sustainable for the UAE.
+              Beta Star Healthcare brings together clinicians, operators and
+              technologists to re-design everyday healthcare delivery.
             </p>
-            <p style="font-size:0.86rem; color:var(--text-muted); margin-top:0.6rem;">
-              From labour accommodation clinics to chronic disease programs, we
-              work closely with employers, insurers and healthcare providers to
-              design models that align patient outcomes with long-term value.
-            </p>
-          </div>
-
-          <div>
-            <div class="section-kicker">Questions</div>
-            <h2 class="section-title">Frequently asked questions.</h2>
-
-            <div style="display:flex; flex-direction:column; gap:0.7rem; margin-top:0.6rem;">
-              <details>
-                <summary>
-                  <span>Do you replace my existing insurance plan?</span>
-                  <span class="faq-toggle">›</span>
-                </summary>
-                <div>
-                  We don’t replace your insurance. We work with your existing
-                  insurer and network to make access to primary care easier and
-                  more coordinated.
-                </div>
-              </details>
-
-              <details>
-                <summary>
-                  <span>Where are your services currently available?</span>
-                  <span class="faq-toggle">›</span>
-                </summary>
-                <div>
-                  We currently serve patients across Dubai and the Northern
-                  Emirates, with a growing clinic and home-visit footprint.
-                </div>
-              </details>
-
-              <details>
-                <summary>
-                  <span>How do corporates partner with you?</span>
-                  <span class="faq-toggle">›</span>
-                </summary>
-                <div>
-                  We typically start with a pilot site or employee group, align on
-                  key outcomes (access, satisfaction, chronic control, costs) and
-                  then scale the model across locations.
-                </div>
-              </details>
-            </div>
           </div>
         </div>
+
+        <p style="font-size:0.86rem; color:var(--text-muted); max-width:640px;">
+          We partner with employers, insurers and healthcare providers to design
+          practical care models for real-world settings: labour accommodations,
+          home care, clinics and digital channels.
+        </p>
       </div>
     </section>
 
-    <!-- CONTACT / CTA -->
+    <!-- CONTACT -->
     <section id="contact">
       <div class="container">
         <div class="contact-card">
           <div>
-            <h3>Let’s design a better care model together.</h3>
-            <p>
-              Share a few details about your organisation or family, and our team
-              will get back within one business day.
+            <h3 style="font-size:1.1rem; margin-bottom:0.25rem;">Let’s explore how we can work together.</h3>
+            <p style="font-size:0.86rem;">
+              Share a few details about your organisation or needs and our team
+              will reach out.
             </p>
           </div>
           <div class="contact-actions">
-            <button class="btn-secondary-light">
-              📅 Book a discovery call
-            </button>
-            <button class="btn-secondary-light">
+            <a class="btn-light" href="mailto:info@yourdomain.com">
               ✉️ Email our team
-            </button>
+            </a>
+            <a class="btn-light" href="https://wa.me/9715XXXXXXXXX" target="_blank">
+              💬 WhatsApp us
+            </a>
           </div>
         </div>
       </div>
@@ -1494,9 +1217,8 @@
     <div class="container">
       <div class="footer-top">
         <div>
-          <div class="brand-title">Novitas Healthcare</div>
+          <div class="brand-title">Beta Star Healthcare</div>
           <div style="font-size:0.8rem; margin-top:0.2rem;">
-            <!-- Replace with real address -->
             Dubai, United Arab Emirates
           </div>
         </div>
@@ -1511,9 +1233,8 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© <span id="yearSpan"></span> Novitas Healthcare. All rights reserved.</div>
+        <div>© <span id="yearSpan"></span> Beta Star Healthcare. All rights reserved.</div>
         <div class="social-row">
-          <!-- Replace with real social links -->
           <a href="#" class="social-pill" aria-label="LinkedIn">in</a>
           <a href="#" class="social-pill" aria-label="Instagram">◎</a>
           <a href="#" class="social-pill" aria-label="X/Twitter">𝕏</a>
@@ -1523,17 +1244,15 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.querySelector(".mobile-toggle");
     const navLinks = document.getElementById("navLinks");
-    const navCta = document.getElementById("navCta");
+    const navRight = document.getElementById("navRight");
 
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("mobile-open");
-      navCta.classList.toggle("mobile-open");
+      navRight.classList.toggle("mobile-open");
     });
 
-    // Smooth scroll for in-page anchors (fallback for older browsers)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function (e) {
         const id = this.getAttribute("href").slice(1);
@@ -1546,7 +1265,6 @@
       });
     });
 
-    // Current year in footer
     document.getElementById("yearSpan").textContent = new Date().getFullYear();
   </script>
 </body>
